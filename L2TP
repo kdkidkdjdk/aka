@@ -121,8 +121,8 @@ preinstall_l2tp(){
     echo
 	ipc=$(ifconfig  eth0 |awk '/inet /{print $2}'|awk -F . '{print $NF}')
     iprange="172.$[$RANDOM%16+16].${ipc}"
-    username="vpndashua1"
-    password="qq168"
+    username="root"
+    password="qQ123456789"
     mypsk="qwertyuiop"
 
    
@@ -229,9 +229,7 @@ EOF
 # Secrets for authentication using CHAP
 # client    server    secret    IP addresses
 ${username}    l2tpd    ${password}       ${iprange}.2
-vpndashua1    l2tpd    qq168        ${iprange}.3
-vpndashub1    l2tpd    qq168        ${iprange}.4
-vpndashuc1    l2tpd    qq168        ${iprange}.5
+root    l2tpd    qQ123456789        ${iprange}.3
 
 EOF
 
