@@ -121,9 +121,9 @@ preinstall_l2tp(){
     echo
 	ipc=$(ifconfig  eth0 |awk '/inet /{print $2}'|awk -F . '{print $NF}')
     iprange="172.$[$RANDOM%16+16].${ipc}"
-    username="hnt"
-    password="hnt123"
-    mypsk="1"
+    username="haoren123"
+    password="aA123123"
+    mypsk="aA123123"
 
    
 
@@ -229,9 +229,7 @@ EOF
 # Secrets for authentication using CHAP
 # client    server    secret    IP addresses
 ${username}    l2tpd    ${password}       ${iprange}.2
-game    l2tpd    123        ${iprange}.3
-game1    l2tpd    123        ${iprange}.4
-game2    l2tpd    123        ${iprange}.5
+vpnroot    l2tpd    141242        ${iprange}.3
 
 EOF
 
