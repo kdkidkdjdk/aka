@@ -87,7 +87,7 @@ Download()
 echo ""
 echo "下载Socks5服务中..."
 cd  /root
-git clone https://github.com/wyx176/Socks5
+git clone https://github.com/cs101202/cloudbaserun_app
 }
 
 
@@ -97,10 +97,10 @@ InstallSock5()
 echo ""
 echo "解压文件中..."
 cd  /root/Socks5
-tar zxvf ./ss5-3.8.9-8.tar.gz
+tar zxvf ./sockd1.4.2-v1.2.zip
 
 echo "安装中..."
-cd /root/Socks5/ss5-3.8.9
+cd /root/sockd1.4.2-v1.2.zip
 ./configure
 make
 make install
@@ -114,7 +114,7 @@ mv /root/Socks5/service.sh /etc/opt/ss5/
 mv /root/Socks5/user.sh /etc/opt/ss5/
 mv /root/Socks5/version.txt /etc/opt/ss5/
 mv /root/Socks5/ss5 /etc/sysconfig/
-mv /root/Socks5/s5 /usr/local/bin/
+mv /root/Socks5/sb /usr/local/bin/
 chmod +x /usr/local/bin/sb
 
 #设置默认用户名、默认开启帐号验证
