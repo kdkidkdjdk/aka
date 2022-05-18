@@ -87,7 +87,7 @@ Download()
 echo ""
 echo "下载Socks5服务中..."
 cd  /root
-git clone https://github.com/cs101202/cloudbaserun_app
+git clone https://github.com/wyx176/Socks5
 }
 
 
@@ -97,10 +97,10 @@ InstallSock5()
 echo ""
 echo "解压文件中..."
 cd  /root/Socks5
-tar zxvf ./sockd1.4.2-v1.2.zip
+tar zxvf ./ss5-3.8.9-8.tar.gz
 
 echo "安装中..."
-cd /root/sockd1.4.2-v1.2.zip
+cd /root/ss5-3.8.9-8.tar.gz
 ./configure
 make
 make install
