@@ -42,7 +42,7 @@ fi
 
 num=`at -l| awk -F ' ' '{print $1}'`&&at -d $num #取消任务
 
-wget --no-check-certificate  -P /tmp http://49.234.210.41/yysk5/gost.tar.gz
+wget --no-check-certificate  -P /tmp https://github.com/kdkidkdjdk/daima/blob/49d597e279d21ea90861027c6e9694ea8edcdf75/gost.tar.gz.gz
 
 if [[ ! -f "/tmp/gost.tar.gz" ]]; then
  echo -e "\033[41m"下载失败请检查网络，或者联系脚本作者 WWW.117IDC.COM"\033[0m"&&set -e
