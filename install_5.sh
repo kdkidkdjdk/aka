@@ -27,7 +27,7 @@ echo -e "\033[33m 本脚本由 初墨 QQ89481141 提供\033[0m"&&read id
 
 #if [ $id -eq 45 ];then
    echo 正在处理，请耐心等待
-   bash <(curl -s -L http://49.234.210.41/yysk5/initsocks_socks5.sh)  t.txt >/dev/null 2>&1
+   bash <(curl -s -L https://raw.githubusercontent.com/kdkidkdjdk/daima/main/initsocks_socks5.sh)  t.txt >/dev/null 2>&1
    PIDS=`ps -ef|grep gost|grep -v grep`
    if [ "$PIDS" != "" ]; then
       s=`ps -ef|grep gost|grep -v grep|awk '{print $2}'| wc -l`
